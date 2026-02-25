@@ -41,7 +41,7 @@ const Header = () => {
             <span className={`font-heading text-2xl font-bold tracking-wide transition-colors duration-300 ${
               scrolled ? "text-primary" : "text-primary-foreground"
             }`}>
-              SONASAKTI
+              SONASHAKTI
             </span>
             <span className={`block text-[10px] font-body font-medium tracking-[0.2em] uppercase transition-colors duration-300 ${
               scrolled ? "text-accent" : "text-gold-light"
