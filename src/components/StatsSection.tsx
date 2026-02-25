@@ -1,10 +1,10 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const stats = [
-  { value: "10+", label: "Years Experience" },
-  { value: "500+", label: "Tons Monthly" },
-  { value: "100+", label: "Happy Clients" },
-  { value: "6", label: "Product Lines" },
+  { value: "13+", label: "Years Experience" },
+  { value: "1000+", label: "Tons Monthly" },
+  { value: "1000+", label: "Happy Clients" },
+  { value: "4", label: "Product Lines" },
 ];
 
 const StatsSection = () => {
