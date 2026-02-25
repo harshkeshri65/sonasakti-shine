@@ -31,7 +31,7 @@ const ContactSection = () => {
           <div className={`lg:col-span-2 animate-reveal-left ${isVisible ? "visible" : ""}`} style={{ transitionDelay: "0.1s" }}>
             <h3 className="font-heading text-2xl font-semibold text-foreground mb-2">ALOK HARSH RICE MILL</h3>
             <p className="text-sm text-muted-foreground mb-1">Private Limited Company</p>
-            <p className="text-accent font-heading italic text-lg mb-8">Brand: SONASAKTI</p>
+            <p className="text-accent font-heading italic text-lg mb-8">Brand: SONASHAKTI</p>
 
             <div className="space-y-5 mb-10">
               {[
