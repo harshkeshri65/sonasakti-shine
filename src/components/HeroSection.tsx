@@ -1,43 +1,103 @@
+import { motion } from "framer-motion";
+import { ArrowDown } from "lucide-react";
 import heroImage from "@/assets/hero-rice-field.jpg";
 
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
+      {/* Background with parallax-like effect */}
       <div className="absolute inset-0">
-        <img src={heroImage} alt="Lush green rice paddy field" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(142,44%,15%,0.7)] via-[hsl(142,44%,15%,0.5)] to-[hsl(142,44%,15%,0.8)]" />
+        <motion.img
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          src={heroImage}
+          alt="Lush green rice paddy field"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(152,55%,10%,0.75)] via-[hsl(152,55%,10%,0.45)] to-[hsl(152,55%,10%,0.85)]" />
+        {/* Subtle grain texture overlay */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\")" }} />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <p className="text-gold-light font-heading text-lg md:text-xl mb-4 animate-fade-in tracking-widest uppercase">
-          Welcome to
-        </p>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground font-heading mb-6 animate-fade-in-up leading-tight">
-          ALOK HARSH RICE MILL<br />PVT. LTD.
-        </h1>
-        <p className="text-xl md:text-2xl text-primary-foreground/90 font-body mb-2 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-          Premium Quality Rice Manufacturer
-        </p>
-        <p className="text-gold-light font-heading text-2xl md:text-3xl italic mb-10 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-          — Richness in Rice —
-        </p>
-        <a
-          href="#contact"
-          className="inline-block green-gradient text-primary-foreground font-semibold px-8 py-4 rounded-lg text-lg hover:opacity-90 transition-opacity shadow-lg animate-fade-in-up"
-          style={{ animationDelay: "0.6s" }}
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mb-8"
         >
-          Contact Us
-        </a>
+          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/5 backdrop-blur-sm">
+            <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+            <span className="font-body text-sm font-medium text-primary-foreground/80 tracking-wider uppercase">
+              Premium Rice Manufacturer
+            </span>
+          </div>
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground font-heading mb-8 leading-[0.95] tracking-tight"
+        >
+          ALOK HARSH
+          <br />
+          <span className="text-gold-light">RICE MILL</span>
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="text-primary-foreground/70 font-body text-lg md:text-xl max-w-lg mx-auto mb-4 leading-relaxed"
+        >
+          Private Limited Company
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.9 }}
+          className="flex items-center justify-center gap-4 mb-12"
+        >
+          <div className="w-12 h-px bg-gradient-to-r from-transparent to-gold-light" />
+          <span className="font-heading text-xl md:text-2xl italic text-gold-light tracking-wide">
+            Richness in Rice
+          </span>
+          <div className="w-12 h-px bg-gradient-to-l from-transparent to-gold-light" />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <a href="#contact" className="premium-btn-primary">
+            Contact Us
+          </a>
+          <a href="#about" className="premium-btn-outline">
+            Learn More
+          </a>
+        </motion.div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary-foreground/50 rounded-full flex justify-center pt-2">
-          <div className="w-1.5 h-3 bg-primary-foreground/70 rounded-full" />
-        </div>
-      </div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2"
+      >
+        <a href="#about" className="flex flex-col items-center gap-2 text-primary-foreground/50 hover:text-primary-foreground/80 transition-colors">
+          <span className="font-body text-xs tracking-widest uppercase">Scroll</span>
+          <motion.div animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}>
+            <ArrowDown className="h-4 w-4" />
+          </motion.div>
+        </a>
+      </motion.div>
     </section>
   );
 };

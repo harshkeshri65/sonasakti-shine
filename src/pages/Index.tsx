@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import StatsSection from "@/components/StatsSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import OurBrand from "@/components/OurBrand";
 import ProductsSection from "@/components/ProductsSection";
@@ -8,6 +9,7 @@ import InfrastructureSection from "@/components/InfrastructureSection";
 import GallerySection from "@/components/GallerySection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -15,6 +17,7 @@ const Index = () => {
       <Header />
       <HeroSection />
       <AboutSection />
+      <StatsSection />
       <WhyChooseUs />
       <OurBrand />
       <ProductsSection />
@@ -22,6 +25,7 @@ const Index = () => {
       <GallerySection />
       <ContactSection />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
