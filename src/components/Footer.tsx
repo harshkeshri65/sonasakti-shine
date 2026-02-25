@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="p-2 rounded-xl bg-primary-foreground/10">
                   <Wheat className="h-6 w-6 text-gold-light" />
                 </div>
-                <span className="font-heading text-2xl font-bold tracking-wide">SONASAKTI</span>
+                <span className="font-heading text-2xl font-bold tracking-wide">SONASHAKTI</span>
               </div>
               <p className="text-primary-foreground/60 text-sm font-body mb-3 leading-relaxed">
                 ALOK HARSH RICE MILL PVT. LTD.
