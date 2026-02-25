@@ -42,7 +42,7 @@ const AboutSection = () => {
             </h2>
 
             <p className="text-muted-foreground leading-[1.8] mb-6 text-base">
-              <strong className="text-foreground font-semibold">ALOK HARSH RICE MILL PVT. LTD.</strong> is a trusted rice manufacturing company located in Gidha, Ara, Bihar. Our brand <strong className="text-primary font-semibold">SONASAKTI</strong> represents premium quality rice processed with modern machinery and strict quality control.
+              <strong className="text-foreground font-semibold">ALOK HARSH RICE MILL PVT. LTD.</strong> is a trusted rice manufacturing company located in Gidha, Ara, Bihar. Our brand <strong className="text-primary font-semibold">SONASHAKTI</strong> represents premium quality rice processed with modern machinery and strict quality control.
             </p>
             <p className="text-muted-foreground leading-[1.8] mb-10 text-base">
               We focus on delivering high quality rice with purity and nutrition. Our commitment to excellence has made us a preferred choice for customers seeking the finest rice products.
