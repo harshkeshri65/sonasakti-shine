@@ -26,7 +26,7 @@ const AboutSection = () => {
               <div className="absolute -bottom-6 -right-6 md:right-8 bg-card rounded-2xl p-6 premium-shadow border border-border/50 max-w-[200px]">
                 <div className="flex items-center gap-2 mb-2">
                   <Wheat className="h-5 w-5 text-accent" />
-                  <span className="font-heading text-lg font-semibold text-foreground">SONASAKTI</span>
+                  <span className="font-heading text-lg font-semibold text-foreground">SONASHAKTI</span>
                 </div>
                 <p className="text-xs text-muted-foreground font-body">Our premium brand of quality rice</p>
               </div>
