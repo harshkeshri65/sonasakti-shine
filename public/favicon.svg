@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0f3d2e"/>
+  
+  <!-- Golden S -->
+  <text x="50%" y="58%" text-anchor="middle"
+        fill="#d4af37"
+        font-size="36"
+        font-family="Georgia, serif"
+        font-weight="bold">
+    S
+  </text>
+
+  <!-- Rice grain -->
+  <ellipse cx="46" cy="18" rx="6" ry="10"
+           fill="#d4af37"
+           transform="rotate(30 46 18)"/>
+</svg>
