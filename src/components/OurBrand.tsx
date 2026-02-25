@@ -12,11 +12,11 @@ const OurBrand = () => {
         <div className="text-center mb-16">
           <span className="section-label">Our Brand</span>
           <h2 className="section-title text-foreground">
-            Discover <span className="text-primary">SONASAKTI</span>
+            Discover <span className="text-primary">SONASHAKTI</span>
           </h2>
           <div className="divider-line mt-6 mb-6" />
           <p className="section-subtitle mb-0">
-            SONASAKTI is our premium rice brand known for superior taste, purity and high nutritional value.
+            SONASHAKTI is our premium rice brand known for superior taste, purity and high nutritional value.
           </p>
         </div>
 
