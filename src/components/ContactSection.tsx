@@ -37,6 +37,7 @@ const ContactSection = () => {
               {[
                 { Icon: MapPin, text: "Gidha, Ara, Bihar", href: undefined },
                 { Icon: Phone, text: "9931570543", href: "tel:9931570543" },
+                  { Icon: Phone, text: "9934057080", href: "tel:9934057080" },
                 { Icon: Mail, text: "alokharshricemillpvt.ltd@gmail.com", href: "mailto:alokharshricemillpvt.ltd@gmail.com" },
               ].map(({ Icon, text, href }) => (
                 <div key={text} className="flex items-start gap-4">
