@@ -46,7 +46,7 @@ const HeroSection = () => {
     ALOK HARSH
   </span>
   <br />
-  <span className="bg-gradient-to-r from-gold-light via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-[0_5px_25px_rgba(255,215,0,0.6)]">
+  <span className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent drop-shadow-[0_6px_30px_rgba(255,215,0,0.8)]">
     RICE MILL
   </span>
 </motion.h1>
