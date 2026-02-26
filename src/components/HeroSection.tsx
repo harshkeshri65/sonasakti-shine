@@ -42,9 +42,13 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground font-heading mb-8 leading-[0.95] tracking-tight"
         >
-          ALOK HARSH
-          <br />
-          <span className="text-gold-light">RICE MILL</span>
+          <span className="text-white drop-shadow-2xl">
+  ALOK HARSH
+</span>
+<br />
+<span className="text-gold-light drop-shadow-lg">
+  RICE MILL
+</span>
         </motion.h1>
 
         <motion.p
