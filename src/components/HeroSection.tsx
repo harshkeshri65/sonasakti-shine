@@ -36,20 +36,20 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground font-heading mb-8 leading-[0.95] tracking-tight"
-        >
-          <span className="text-white drop-shadow-2xl">
-  ALOK HARSH
-</span>
-<br />
-<span className="text-gold-light drop-shadow-lg">
-  RICE MILL
-</span>
-        </motion.h1>
+      <motion.h1
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.5 }}
+  className="text-5xl md:text-7xl lg:text-8xl font-bold font-heading mb-8 leading-[0.95] tracking-tight"
+>
+  <span className="bg-gradient-to-r from-white via-yellow-100 to-gold-light bg-clip-text text-transparent drop-shadow-[0_5px_25px_rgba(255,215,0,0.5)]">
+    ALOK HARSH
+  </span>
+  <br />
+  <span className="bg-gradient-to-r from-gold-light via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-[0_5px_25px_rgba(255,215,0,0.6)]">
+    RICE MILL
+  </span>
+</motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
