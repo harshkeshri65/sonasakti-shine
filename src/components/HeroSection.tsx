@@ -68,7 +68,7 @@ const HeroSection = () => {
         >
           <div className="w-12 h-px bg-gradient-to-r from-transparent to-gold-light" />
           <span className="font-heading text-xl md:text-2xl italic text-gold-light tracking-wide">
-            Delivering Purity, Taste & Trust Since 2015
+            Delivering Purity, Taste & Trust Since 2013
           </span>
           <div className="w-12 h-px bg-gradient-to-l from-transparent to-gold-light" />
         </motion.div>
