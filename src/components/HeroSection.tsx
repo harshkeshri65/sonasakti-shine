@@ -53,7 +53,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-primary-foreground/70 font-body text-lg md:text-xl max-w-lg mx-auto mb-4 leading-relaxed"
         >
-          Private Limited Company
+          Premium Quality Rice Manufacturer in Bihar
         </motion.p>
 
         <motion.div
@@ -64,7 +64,7 @@ const HeroSection = () => {
         >
           <div className="w-12 h-px bg-gradient-to-r from-transparent to-gold-light" />
           <span className="font-heading text-xl md:text-2xl italic text-gold-light tracking-wide">
-            Richness in Rice
+            Delivering Purity, Taste & Trust Since 2015
           </span>
           <div className="w-12 h-px bg-gradient-to-l from-transparent to-gold-light" />
         </motion.div>
@@ -75,7 +75,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.1 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a href="#contact" className="premium-btn-primary">
+          <a href="#contact" className="premium-btn-primary shadow-xl hover:scale-105 transition-all duration-300">
             Contact Us
           </a>
           <a href="#about" className="premium-btn-outline">
